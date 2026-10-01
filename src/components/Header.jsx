@@ -150,14 +150,14 @@ const Header = () => {
               ["Brands", "#brands"],
               ["Contact", "#contact"],
             ].map(([name, href]) => (
-              <a
+              <Link
                 key={name}
-                href={href}
+                to={href}
                 onClick={() => setMenuOpen(false)}
                 className="border-b border-zinc-100 px-3 py-3 text-[14px] font-semibold text-zinc-800 last:border-0"
               >
                 {name}
-              </a>
+              </Link>
             ))}
 
             <a
